@@ -10,8 +10,8 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import jwt
 import redis
 import rq
-from app import db, login
-from app.search import add_to_index, remove_from_index, query_index
+from application import db, login
+from application.search import add_to_index, remove_from_index, query_index
 
 
 class SearchableMixin(object):
